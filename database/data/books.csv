@@ -1,0 +1,67 @@
+id,testament_id,name,abbrev
+1,1,Gênesis,gn
+2,1,Êxodo,ex
+3,1,Levítico,lv
+4,1,Números,nm
+5,1,Deuteronômio,dt
+6,1,Josué,js
+7,1,Juízes,jz
+8,1,Rute,rt
+9,1,"1º Samuel",1sm
+10,1,"2º Samuel",2sm
+11,1,"1º Reis",1rs
+12,1,"2º Reis",2rs
+13,1,"1º Crônicas",1cr
+14,1,"2º Crônicas",2cr
+15,1,Esdras,ed
+16,1,Neemias,ne
+17,1,Ester,et
+18,1,Jó,job
+19,1,Salmos,sl
+20,1,Provérbios,pv
+21,1,Eclesiastes,ec
+22,1,Cânticos,ct
+23,1,Isaías,is
+24,1,Jeremias,jr
+25,1,"Lamentações de Jeremias",lm
+26,1,Ezequiel,ez
+27,1,Daniel,dn
+28,1,Oséias,os
+29,1,Joel,jl
+30,1,Amós,am
+31,1,Obadias,ob
+32,1,Jonas,jn
+33,1,Miquéias,mq
+34,1,Naum,na
+35,1,Habacuque,hc
+36,1,Sofonias,sf
+37,1,Ageu,ag
+38,1,Zacarias,zc
+39,1,Malaquias,ml
+40,1,Mateus,mt
+41,1,Marcos,mc
+42,1,Lucas,lc
+43,1,João,jo
+44,1,Atos,at
+45,1,Romanos,rm
+46,1,"1ª Coríntios",1co
+47,1,"2ª Coríntios",2co
+48,1,Gálatas,gl
+49,1,Efésios,ef
+50,1,Filipenses,fp
+51,1,Colossenses,cl
+52,1,"1ª Tessalonicenses",1ts
+53,1,"2ª Tessalonicenses",2ts
+54,1,"1ª Timóteo",1tm
+55,1,"2ª Timóteo",2tm
+56,1,Tito,tt
+57,1,Filemom,fm
+58,1,Hebreus,hb
+59,1,Tiago,tg
+60,1,"1ª Pedro",1pe
+61,1,"2ª Pedro",2pe
+62,1,"1ª João",1jo
+63,1,"2ª João",2jo
+64,1,"3ª João",3jo
+65,1,Judas,jd
+66,1,Apocalipse,ap
