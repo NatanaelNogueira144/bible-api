@@ -1,6 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/diary', 'App\Http\Controllers\HomeController@diary');
-Route::get('/weekly', 'App\Http\Controllers\HomeController@weekly');
+Route::get('/diary', [HomeController::class, 'diary']);
+Route::get('/weekly', [HomeController::class, 'weekly']);
