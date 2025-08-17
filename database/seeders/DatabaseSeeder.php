@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
         $this->call(NVIVerseSeeder::class);
         $this->call(NVTVerseSeeder::class);
         $this->call(ReadingPlanSeeder::class);
-        $this->call(ReadingPlanDaySeeder::class);
+        $this->call(SBBReadingPlanDaySeeder::class);
+        $this->call(ChronologicalReadingPlanDaySeeder::class);
     }
 }

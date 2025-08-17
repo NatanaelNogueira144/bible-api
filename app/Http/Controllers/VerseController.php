@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Filters\VersesFilter;
 use App\Http\Resources\VerseCollection;
-use App\Models\{ Book, Verse };
 use Illuminate\Support\Facades\Gate;
 
 class VerseController extends Controller
@@ -15,7 +14,7 @@ class VerseController extends Controller
 
         $filter = new VersesFilter();
         return new VerseCollection(
-            $filter->passagesToQuery($version, $abbrev, $passages)->orderBy('chapter')->orderBy('verse')->with('book')->get()
+            $filter->passages($version, $abbrev, $passages)->orderBy('chapter')->orderBy('verse')->with('book')->get()
         );
     }
 }

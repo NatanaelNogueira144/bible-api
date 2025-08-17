@@ -17,9 +17,7 @@ class VerseResource extends JsonResource
             'chapter' => $this->chapter,
             'verse' => $this->verse,
             'text' => $this->text,
-            'book' => new BookResource($this->whenLoaded('book')),
-            'createdAt' => $this->created_at,
-            'updatedAt' => $this->updated_at
+            'book' => new BookResource($this->whenLoaded('book'))
         ];
     }
 }

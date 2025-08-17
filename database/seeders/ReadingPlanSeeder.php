@@ -10,6 +10,7 @@ class ReadingPlanSeeder extends Seeder
 {
     public function run(): void
     {
-        ReadingPlan::create(['name' => 'Leitura da Bíblia em 1 Ano']);
+        ReadingPlan::create(['name' => 'Sociedade Bíblica do Brasil (Anual)']);
+        ReadingPlan::create(['name' => 'Cronológico (Anual)']);
     }
 }

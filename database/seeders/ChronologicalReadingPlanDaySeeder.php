@@ -3,14 +3,13 @@
 namespace Database\Seeders;
 
 use App\Models\ReadingPlanDay;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class ReadingPlanDaySeeder extends Seeder
+class ChronologicalReadingPlanDaySeeder extends Seeder
 {
     public function run(): void
     {
-        $csvFile = fopen(base_path('database/data/reading-plan-days.csv'), 'r');
+        $csvFile = fopen(base_path('database/data/reading-plan-chronological.csv'), 'r');
         $firstline = true;
         while(($data = fgetcsv($csvFile, 2000, ',')) !== false) {
             if(!$firstline) {

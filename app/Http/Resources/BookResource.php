@@ -14,9 +14,7 @@ class BookResource extends JsonResource
             'testamentId' => $this->testament_id,
             'name' => $this->name,
             'abbrev' => $this->abbrev,
-            'testament' => new TestamentResource($this->whenLoaded('testament')),
-            'createdAt' => $this->created_at,
-            'updatedAt' => $this->updated_at
+            'testament' => new TestamentResource($this->whenLoaded('testament'))
         ];
     }
 }

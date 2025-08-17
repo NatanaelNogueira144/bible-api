@@ -2,16 +2,19 @@
 
 namespace App\Filters;
 
-use App\Models\{ Book, Verse };
+use App\Models\{ Book, ReadingPlan, Verse };
 
 class VersesFilter 
 {
     public function __construct() 
     {}
 
-    public function passagesToQuery(string $version, string $abbrev, string|int $passages) 
+    public function passages(string $version, string $abbrev, string|int $passages) 
     {
-        $mainQuery = $this->prepareMainQuery($version, $abbrev);
+        $mainQuery = Verse::where([
+            ['version', '=', $version],
+            ['book_id', '=', Book::where('abbrev', $abbrev)->first()?->id ?? 1]
+        ]);
 
         if(is_string($passages) && (str_contains($passages, ':') || str_contains($passages, ';'))) {
             $mainQuery->where(function($query) use ($passages) {
@@ -50,10 +53,8 @@ class VersesFilter
         return $mainQuery;
     }
 
-    private function prepareMainQuery(string $version, string $abbrev) {
-        return Verse::where([
-            ['version', '=', $version],
-            ['book_id', '=', Book::where('abbrev', $abbrev)->first()?->id ?? 1]
-        ]);
+    public function readingPlanDay(int $planId, int $day, string $version) 
+    {
+        return ReadingPlan::find($planId)->getVersesByDay($day, $version);
     }
 }
